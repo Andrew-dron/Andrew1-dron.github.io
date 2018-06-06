@@ -101,6 +101,15 @@
 	color: white;
 	padding: 40px;
 }
+
+.cell:hover{
+
+  box-shadow: 0px 0px 500px 0px #000000 inset;
+  transition: .2s linear;
+} 
+
+
+
 .descofcell p{
 	color: white;
 	font-size: 18px;
@@ -111,6 +120,24 @@
 	background: none;
 	border: 1px solid white;
 	transition: bottom 0.25s;
+	text-decoration: none;
+	margin-top: 400px !important;
+	display: none !important;
+}
+.cell:hover button{
+	display: inline-block !important;
+	color: white !important;
+	transform: translate(0,-350px) !important;
+    -webkit-transform: translate(0,-350px) !important;
+    -o-transform: translate(0,-350px) !important;
+    -moz-transform: translate(0,-350px) !important;
+    transition-duration: 2s !important;
+
+
+}
+
+.cell:hover button a{
+	color: white !important;
 }
 
 .container {
@@ -164,7 +191,7 @@
 }
 
 header{
-	width: 200px !important;;
+	width: 210px !important;;
 	height: 100% !important;
 	position: absolute !important;
 	background: white;
