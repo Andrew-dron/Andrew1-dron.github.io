@@ -46,8 +46,30 @@
 	</div>
 
 	<div class="dropdown">
+		
+		<button class="btn btn-primary dropdown-toggle menubtn" type="button" data-toggle="dropdown"> <div id="nav-icon4">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div><p id="status">MENU</p></button>
 
-		<button class="btn btn-primary dropdown-toggle menubtn" type="button" data-toggle="dropdown"> <img src="images/menu-alt-256.png"> <br> МЕНЮ</button>
+		<script type="text/javascript">$(document).ready(function(){
+			var p = document.getElementsByTagName('p')[0];
+			n=0
+			$('.menubtn').click(function(){
+				$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
+
+			if (n==0){
+				p.innerHTML = p.innerHTML.replace(/MENU/,'CLOSE');
+				n = n+1;
+			}
+			else{
+					p.innerHTML = p.innerHTML.replace(/CLOSE/,'MENU');
+					n= n-1;
+				}
+				});
+
+		});</script>
 		<div class="dropdown-menu dropdown-menu-right dpr">
 			<ul class="">
 				<li><a href="index.html">Главная</a></li>
@@ -57,7 +79,7 @@
 	</div>
 
 	<div class="social">
-		<a href="https://www.youtube.com/user/6622993" target="_blank"><i class="fa fa-youtube-square socico"></i></a>
+		<a href="https://www.youtube.com/user/6622993" target="_blank"><i class="fa fa-youtube-square socico" style="color: red !important;"></i></a>
 		<a href="https://www.instagram.com/okravtsova8/" target="_blank" ><i class="fa fa-instagram socico"></i>
 		</a>
 	</div>
@@ -84,13 +106,11 @@
 		<div class="contacts col-md-offset-1">
 
 			<div class=" con ">
-				<a class="logocon" href=""><img  src="images/tennis_PNG10405.png"></a>
-				<h3>Время работы:</h3>
-				<p>Ежедневно с 8:00-21:00</p>
-				<h3>ООО "ХХХ":</h3>
-				<p>Адрес г.Москва, ул.Мосевоская, д.1</p>
-				<h3>Сввязаться с нами:</h3>
-				<a href="tel: 89999999999">8(999)999-99-99</a>
+				<a class="logocon" href=""><img  src="images/Logo_Png.png"></a>
+				<h3>Телефон:</h3>
+				<a href="tel: 89999999999">8(929)999-64-06</a><br>
+				<h3>Электронная почта:</h3>
+				<a href="mailto:1sila@inbox.ru">1sila@inbox.ru</a> 
 			</div>
 
 </body>
